@@ -36,38 +36,6 @@
 		<link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 </head>
 
-<script>
-	//Resize the iframe
-	window.addEventListener('resize', reloadStream);
-
-	function reloadStream() {
-		document.getElementById("livestream").contentWindow.location =
-			"https://player.twitch.tv/?channel=erennimmtehren";
-	}
-
-	function reloadStreamD() {
-		setTimeout(function () {
-			reloadStream();
-		}, 500);
-	}
-
-	//Change Title
-	switch (window.location.href.split("#")[1]) {
-		case "pc":
-			document.title = "ErenNimmtEhren - PC";
-			break;
-		case "equipment":
-			document.title = "ErenNimmtEhren - Equipment";
-			break;
-		case "links":
-			document.title = "ErenNimmtEhren - Links";
-			break;
-		default:
-			document.title = "ErenNimmtEhren - Live";
-			break;
-	}
-</script>
-
 <body class="is-preload">
 
 	<!-- Wrapper-->
@@ -160,12 +128,47 @@
 		<!-- Footer -->
 		<div id="footer">
 			<ul class="copyright">
-				<li>&copy; ErenNimmtEhren</li>
+				<li id="copyy">&copy; ErenNimmtEhren</li>
 				<li>Design: <a href="http://html5up.net" target="_blank">HTML5 UP</a></li>
 			</ul>
 		</div>
 
 	</div>
+
+	<script>
+		//Resize the iframe
+		window.addEventListener('resize', reloadStream);
+
+		function reloadStream() {
+			document.getElementById("livestream").contentWindow.location =
+				"https://player.twitch.tv/?channel=erennimmtehren";
+		}
+
+		function reloadStreamD() {
+			setTimeout(function () {
+				reloadStream();
+			}, 500);
+		}
+
+		//Change Title
+		switch (window.location.href.split("#")[1]) {
+			case "pc":
+				document.title = "ErenNimmtEhren - PC";
+				break;
+			case "equipment":
+				document.title = "ErenNimmtEhren - Equipment";
+				break;
+			case "links":
+				document.title = "ErenNimmtEhren - Links";
+				break;
+			default:
+				document.title = "ErenNimmtEhren - Live";
+				break;
+		}
+
+		//Set the current year
+		document.getElementById("copyy").innerHTML = "&copy; " + new Date().getFullYear() + " ErenNimmtEhren";
+	</script>
 
 	<!-- Scripts -->
 	<script src="assets/js/jquery.min.js"></script>
