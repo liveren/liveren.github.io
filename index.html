@@ -1,0 +1,139 @@
+<!DOCTYPE HTML>
+<!--
+	Astral by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+
+<head>
+	<title>ErenNimmtEhren</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<noscript>
+		<link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+</head>
+
+<script>
+	//Resize the iframe
+	window.addEventListener('resize', reloadStream);
+
+	function reloadStream() {
+		document.getElementById("livestream").contentWindow.location =
+			"https://embed.restream.io/player/index.html?token=de20b7268f234a84cf444ddfec1fcb57";
+	}
+
+	function reloadStreamD() {
+		setTimeout(function () {
+			reloadStream();
+		}, 500);
+	}
+</script>
+
+<body class="is-preload">
+
+	<!-- Wrapper-->
+	<div id="wrapper">
+
+		<!-- Nav -->
+		<nav id="nav">
+			<a href="#" onclick="reloadStreamD()" class="icon solid fa-home"><span>Live</span></a>
+			<a href="#pc" class="icon solid fa-desktop"><span>PC</span></a>
+			<a href="#equipment" class="icon solid fa-keyboard"><span>Equipment</span></a>
+			<a href="#links" class="icon solid fa-link"><span>Links</span></a>
+		</nav>
+
+		<!-- Main -->
+		<div id="main">
+
+			<!-- Live -->
+			<article id="home" style="background-color: black; min-height: 350px; height: 50vh;" class="panel intro">
+				<iframe id="livestream"
+					src="https://embed.restream.io/player/index.html?token=de20b7268f234a84cf444ddfec1fcb57"
+					width="100%" height="100%" frameborder="0" allowfullscreen></iframe>
+			</article>
+
+			<!-- PC -->
+			<article id="pc" class="panel">
+				<header>
+					<h2>Mein PC</h2>
+				</header>
+				<section>
+					<a href="https://www.amazon.de/dp/B07B428M7F" target="_blank">AMD Ryzen 7 2700X</a><br>
+					<a href="https://www.amazon.de/dp/B078TK7PQW" target="_blank">Asus ROG Strix RXVEGA56</a><br>
+					<a href="https://www.amazon.de/dp/B07D1XCKWW" target="_blank">Corsair Vengeance RGB PRO 16GB</a><br>
+					<a href="https://www.amazon.de/dp/B07L8W24DX" target="_blank">Aerocool KLAW</a><br>
+					<a href="https://www.amazon.de/dp/B07KX428VH" target="_blank">B07L8W24DX</a><br>
+					<a href="https://www.amazon.de/dp/B07G3YNLJB" target="_blank">Crucial BX500 240 GB </a><br>
+					<a href="https://www.amazon.de/dp/B07JHLD38L" target="_blank">be quiet! Pure Power 11 CM
+						500W</a><br>
+					<a href="https://www.amazon.de/dp/B01LY65EVG" target="_blank">Seagate BarraCuda 1 TB</a><br>
+				</section>
+			</article>
+
+			<!-- Equipment -->
+			<article id="equipment" class="panel">
+				<header>
+					<h2>Mein Equipment</h2>
+				</header>
+				<section>
+					<div class="row">
+						<div class="col-4 col-6-medium col-12-small">
+							<a href="https://www.amazon.de/dp/B01LQ4BMEQ" target="_blank" class="image fit"><img
+									src="https://images-na.ssl-images-amazon.com/images/I/91SOOAali5L._SX679_.jpg"
+									alt=""></a>
+						</div>
+						<div class="col-4 col-6-medium col-12-small">
+							<a href="https://www.amazon.de/dp/B0756Z1XTW" target="_blank" class="image fit"><img
+									src="https://images-na.ssl-images-amazon.com/images/I/51JaiO0PyNL._SX679_.jpg"
+									alt=""></a>
+						</div>
+					</div>
+				</section>
+			</article>
+
+			<!-- Links -->
+			<article id="links" class="panel">
+				<header>
+					<h2>Links</h2>
+				</header>
+				<section>
+					<div style="display: inline-block; line-height: 3;">
+						<a href="https://discord.gg/rpvdY42" target="_blank"><button class="button large"><i
+									class="fab fa-discord"></i>
+								Discord</button></a>
+						<a href="https://www.instagram.com/eren.455/" target="_blank"><button class="button large"><i
+									class="fab fa-instagram"></i> Instragram</button></a>
+						<a href="https://www.twitch.tv/erennimmtehren" target="_blank"><button class="button large"><i
+									class="fab fa-twitch"></i> Twitch</button></a>
+						<a href="https://www.youtube.com/channel/UC1X2BPEfmGRTU4pF1irkyFg" target="_blank"><button
+								class="button large"><i class="fab fa-youtube"></i> YouTube</button></a>
+						<a href="https://open.spotify.com/user/213m2sftxmnv34vbm47ogfg6i?si=YVDhIfpXRf2-leZJbDoXbg"
+							target="_blank"><button class="button large"><i class="fab fa-spotify"></i>
+								Spotify</button></a></div>
+				</section>
+			</article>
+
+		</div>
+
+		<!-- Footer -->
+		<div id="footer">
+			<ul class="copyright">
+				<li>&copy; ErenNimmtEhren</li>
+				<li>Design: <a href="http://html5up.net" target="_blank">HTML5 UP</a></li>
+			</ul>
+		</div>
+
+	</div>
+
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
