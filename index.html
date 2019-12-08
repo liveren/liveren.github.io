@@ -29,6 +29,22 @@
 			reloadStream();
 		}, 500);
 	}
+
+	//Change Title
+	switch (window.location.href.split("#")[1]) {
+		case "pc":
+			document.title = "ErenNimmtEhren - PC";
+			break;
+		case "equipment":
+			document.title = "ErenNimmtEhren - Equipment";
+			break;
+		case "links":
+			document.title = "ErenNimmtEhren - Links";
+			break;
+		default:
+			document.title = "ErenNimmtEhren - Live";
+			break;
+	}
 </script>
 
 <body class="is-preload">
@@ -38,10 +54,14 @@
 
 		<!-- Nav -->
 		<nav id="nav">
-			<a href="#" onclick="reloadStreamD()" class="icon solid fa-home"><span>Live</span></a>
-			<a href="#pc" class="icon solid fa-desktop"><span>PC</span></a>
-			<a href="#equipment" class="icon solid fa-keyboard"><span>Equipment</span></a>
-			<a href="#links" class="icon solid fa-link"><span>Links</span></a>
+			<a href="#" onclick="reloadStreamD(); document.title = 'ErenNimmtEhren - Live';"
+				class="icon solid fa-home"><span>Live</span></a>
+			<a href="#pc" onclick="document.title = 'ErenNimmtEhren - PC';"
+				class="icon solid fa-desktop"><span>PC</span></a>
+			<a href="#equipment" onclick="document.title = 'ErenNimmtEhren - Equipment';"
+				class="icon solid fa-keyboard"><span>Equipment</span></a>
+			<a href="#links" onclick="document.title = 'ErenNimmtEhren - Links';"
+				class="icon solid fa-link"><span>Links</span></a>
 		</nav>
 
 		<!-- Main -->
