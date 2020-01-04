@@ -203,6 +203,26 @@
 
 		//Set the current year
 		document.getElementById("copyy").innerHTML = "&copy; " + new Date().getFullYear() + " ErenNimmtEhren";
+
+		//Random background
+		var backgrounds = ["https://webgradients.com/public/webgradients_png/021%20True%20Sunset.png",
+			"https://webgradients.com/public/webgradients_png/163%20Fresh%20Oasis.png",
+			"https://webgradients.com/public/webgradients_png/016%20Deep%20Blue.png",
+			"https://webgradients.com/public/webgradients_png/022%20Morpheus%20Den.png",
+			"https://webgradients.com/public/webgradients_png/024%20Near%20Moon.png",
+			"https://webgradients.com/public/webgradients_png/028%20Plum%20Plate.png",
+			"https://webgradients.com/public/webgradients_png/035%20Itmeo%20Branding.png",
+			"https://webgradients.com/public/webgradients_png/039%20Deep%20Blue.png",
+			"https://webgradients.com/public/webgradients_png/038%20Star%20Wine.png",
+			"https://webgradients.com/public/webgradients_png/020%20New%20Life.png",
+			"https://webgradients.com/public/webgradients_png/019%20Malibu%20Beach.png"
+		];
+
+		console.log(Math.ceil(Math.random() * backgrounds.length));
+
+		document.body.style.background = 'url("images/overlay.png"), url("' + backgrounds[Math.ceil(Math.random() *
+			(backgrounds
+				.length - 1))] + '")';
 	</script>
 
 	<!-- Scripts -->
